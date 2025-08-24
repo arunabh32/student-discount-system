@@ -1,35 +1,51 @@
-# 🎓 Student Discount System (Java)
+Student Discount System (JavaFX)
 
-A simple Java command-line application that records student information and calculates discounted course prices based on full-time or part-time status. This project demonstrates clean OOP design using abstract classes, interfaces, and inheritance.
+A simple JavaFX application that records student information and calculates discounted course prices based on whether the student is part-time or full-time.
 
----
+This project demonstrates:
 
-## 📌 Features
+JavaFX UI with forms, tables, and input validation
 
-- 🧑‍🎓 Store student info: name, roll number, subject, stream, and status
-- 💸 Apply course fee discounts:
-  - 40% for part-time students
-  - 30% for full-time students
-- ✅ CLI input validation using exception handling
-- 📦 Store multiple student entries using `ArrayList`
+Object-Oriented Programming (OOP) concepts such as abstract classes, interfaces, and inheritance
 
----
+Use of ObservableList and TableView for dynamic data management
 
-## 💻 Tech Stack
+🚀 Features
 
-- **Language:** Java
-- **Concepts Used:**  
-  `OOP`, `Interfaces`, `Abstract Classes`, `Exception Handling`
-- **Tools:** Git, GitHub, VS Code or any IDE
+Add student details (Name, Roll No, Subject, Stream, Status, Course Price)
 
----
+Status options: Full-Time / Part-Time
 
-## 📁 Project Structure
+Automatic calculation of discounted price:
 
-```plaintext
-Rew.java             --> Main class that drives the app
-Student              --> Abstract base class
-Batch                --> Inherits Student and implements DisplayInfo
-CourseCost           --> Inherits Batch and implements Displaydiscount
-DisplayInfo          --> Interface to print student name/roll
-Displaydiscount      --> Interface to apply discounts
+Part-Time → 40% discount
+
+Full-Time → 30% discount
+
+Displays all students in a JavaFX TableView
+
+📂 Project Structure
+JavaFX-version/
+ ├── src/
+ │    └── Main.java        # Entry point (JavaFX Application)
+ │    └── style.css        # Custom styling (optional)
+
+🛠 Requirements
+
+Java 11+
+
+JavaFX SDK installed and configured
+
+Any IDE (e.g., IntelliJ IDEA, Eclipse, NetBeans)
+
+▶️ How to Run
+
+Clone the repository:
+
+git clone https://github.com/your-username/student-discount-system.git
+cd student-discount-system/JavaFX-version
+
+
+Open in your IDE and make sure JavaFX is set up.
+
+Run Main.java.
